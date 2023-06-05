@@ -1,9 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams, useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
 import DataList from "@/components/DataList";
-import Loading from "@/components/Loading";
 const page = () => {
   const query = useParams();
   // console.log(query.search);
@@ -11,14 +10,14 @@ const page = () => {
   const [print, setPrint] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    console.log(searchInput);
+    // console.log(searchInput);
     getData();
   }, []);
 
   const getData = async () => {
     const options = {
       method: "GET",
-      url: "https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/WebSearchAPI",
+      url: "https://joj-web-search.p.rapidapi.com/",
       params: {
         q: searchInput,
         pageNumber: "1",
@@ -27,14 +26,14 @@ const page = () => {
       },
       headers: {
         "X-RapidAPI-Key": "cb71be83e8msh4469adcf64b9195p17e5d8jsn0fa73888fb5c",
-        "X-RapidAPI-Host": "contextualwebsearch-websearch-v1.p.rapidapi.com",
+        "X-RapidAPI-Host": "joj-web-search.p.rapidapi.com",
       },
     };
 
     try {
       const response = await axios.request(options);
-      // console.log(response.data);
-      setPrint(response.data.value);
+      console.log(response.data.results);
+      setPrint(response.data.results);
       setLoading(false);
       // console.log(print);
     } catch (error) {
@@ -46,7 +45,7 @@ const page = () => {
     setLoading(true);
     const options = {
       method: "GET",
-      url: "https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/WebSearchAPI",
+      url: "https://joj-web-search.p.rapidapi.com/",
       params: {
         q: searchInput,
         pageNumber: "1",
@@ -55,14 +54,14 @@ const page = () => {
       },
       headers: {
         "X-RapidAPI-Key": "cb71be83e8msh4469adcf64b9195p17e5d8jsn0fa73888fb5c",
-        "X-RapidAPI-Host": "contextualwebsearch-websearch-v1.p.rapidapi.com",
+        "X-RapidAPI-Host": "joj-web-search.p.rapidapi.com",
       },
     };
 
     try {
       const response = await axios.request(options);
       // console.log(response.data);
-      setPrint(response.data.value);
+      setPrint(response.data.results);
       setLoading(false);
       // console.log(print);
     } catch (error) {

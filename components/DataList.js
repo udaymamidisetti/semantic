@@ -5,7 +5,6 @@ import Loading from "./Loading";
 
 const DataList = (props) => {
   const { search, print, loading } = props;
-  console.log(print);
   return (
     <div className="container m-auto h-[100vh]">
       <h1 className="text-[20px] font-semibold border-b-[2px] border-[#d9dadb] mt-[30px]">
@@ -41,7 +40,7 @@ const DataList = (props) => {
           <Loading />
         ) : (
           print.map((e) => (
-            <div key={e.id}>
+            <div key={e.position}>
               <a href={e.url}>
                 <h1 className="text-[#1857b6] text-[20px] font-semibold hover:underline hover:cursor-pointer">
                   {e.title}

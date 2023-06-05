@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { Modal, Box, Typography } from "@mui/material";
+import { useSelector, useDispatch } from "react-redux";
+import { increment } from "@/redux/counterSlice";
 const style = {
   position: "absolute",
   top: "50%",
@@ -14,6 +16,9 @@ const style = {
 };
 function Header() {
   const [modal, setModal] = useState(false);
+  const dispatch = useDispatch();
+  const value = useSelector((store) => store.counter.value);
+  console.log(value);
   const handleModal = () => {
     setModal(!modal);
   };
@@ -22,6 +27,10 @@ function Header() {
   };
   return (
     <header>
+      <h1 className="text-[white]">Count:{value}</h1>
+      <button className="text-[white]" onClick={() => dispatch(increment())}>
+        Click
+      </button>
       <div className="container m-auto h-[70px] flex gap-[20px] justify-end items-end ">
         <button
           className="text-[#f4d35e] border-[#f4d35e] border-[1px] text-[14px] h-[30px] w-[80px] rounded-md"
