@@ -27,10 +27,10 @@ function Header() {
   };
   return (
     <header>
-      <h1 className="text-[white]">Count:{value}</h1>
+      {/* <h1 className="text-[white]">Count:{value}</h1>
       <button className="text-[white]" onClick={() => dispatch(increment())}>
         Click
-      </button>
+      </button> */}
       <div className="container m-auto h-[70px] flex gap-[20px] justify-end items-end ">
         <button
           className="text-[#f4d35e] border-[#f4d35e] border-[1px] text-[14px] h-[30px] w-[80px] rounded-md"

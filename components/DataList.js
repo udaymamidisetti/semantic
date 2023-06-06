@@ -41,7 +41,7 @@ const DataList = (props) => {
         ) : (
           print.map((e) => (
             <div key={e.position}>
-              <a href={e.url}>
+              <a href={e.url} target="_self">
                 <h1 className="text-[#1857b6] text-[20px] font-semibold hover:underline hover:cursor-pointer">
                   {e.title}
                 </h1>

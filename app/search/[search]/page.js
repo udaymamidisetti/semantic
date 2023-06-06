@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "next/navigation";
 import DataList from "@/components/DataList";
-const page = () => {
+const Page = () => {
   const query = useParams();
   // console.log(query.search);
   const [searchInput, setSearchInput] = useState(query.search);
@@ -70,7 +70,7 @@ const page = () => {
   };
 
   return (
-    <div className="h-[100vh]">
+    <div className="">
       <header className="m-auto bg-[white] flex justify-between items-center">
         <div>
           <a className="h-[50px]" aria-label="Homepage" href="/">
@@ -139,4 +139,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

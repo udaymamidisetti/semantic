@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const Developers = () => {
   return (
     <div>
@@ -14,9 +14,11 @@ const Developers = () => {
               increased stability. Join hundreds of other developers and start
               building your scholarly app today.
             </p>
-            <button className="bg-[#1857b6] text-[#fff] text-[14px] h-[30px] w-[120px] rounded-[4px] mt-[20px]">
-              Get Started
-            </button>
+            <Link href="/products/api">
+              <button className="bg-[#1857b6] text-[#fff] text-[14px] h-[30px] w-[120px] rounded-[4px] mt-[20px]">
+                Get Started
+              </button>
+            </Link>
           </div>
           <div className="bg-[#e6e6e6] w-[40%] h-[290px] flex justify-center items-center rounded-tl-[150px] rounded-bl-[40px]">
             <img
