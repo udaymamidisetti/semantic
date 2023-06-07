@@ -68,10 +68,10 @@ function Header() {
               <p className="text-[14px]">
                 Don't have an account <span>Create new Account</span>
               </p>
-              <p className="bg-[#25252e] text-[#fff] text-[12px] h-[35px] flex items-center cursor-pointer mt-[20px] rounded-[5px]">
+              <p className="bg-[#25252e] pl-[10px] text-[#fff] text-[12px] h-[35px] flex items-center cursor-pointer mt-[20px] rounded-[5px]">
                 Sign In with your Institution
               </p>
-              <p className="bg-[#0c57cf] text-[#fff] text-[12px] h-[35px] flex items-center cursor-pointer mt-[20px] rounded-[5px]">
+              <p className="pl-[10px] bg-[#0c57cf] text-[#fff] text-[12px] h-[35px] flex items-center cursor-pointer mt-[20px] rounded-[5px]">
                 Sign In with Google
               </p>
               <p className="text-right text-[#0c57cf] hover:underline text-[14px] mt-[10px] cursor-pointer">
@@ -96,7 +96,8 @@ function Header() {
                   Sign In
                 </button>
               </div>
-              <p className="text-[12px] absolute bottom-[33px]">
+              <p className="text-[12px] absolute bottom-[33px] flex gap-[5px]">
+                <input type="checkbox" />
                 By signing in, you accept our Terms of Service & Privacy Policy.
               </p>
             </div>

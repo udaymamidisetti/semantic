@@ -1,8 +1,9 @@
 import React from "react";
+import Footer from "../Footer";
 
 const Testimonials = () => {
   return (
-    <div className="bg-white pt-[40px] pb-[60px]">
+    <div className="bg-white pt-[40px]">
       <div className="m-auto">
         <div className="flex gap-[10px] justify-center">
           <div>
@@ -195,9 +196,121 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <div className="bg-[90%] bg-cover h-[100vh] bg-[#11223d] bg-[url('https://assets-global.website-files.com/605236bb76…9a5bb229c63c/605bb9bfce18ce8453a1a5cd_rays-bg.svg')]"></div>
+      <div className="bg-[90%] bg-cover h-[100vh] bg-[#11223d] bg-[url('https://assets-global.website-files.com/605236bb76…9a5bb229c63c/605bb9bfce18ce8453a1a5cd_rays-bg.svg')]">
+        <div className="bg-white w-[1000px] m-auto p-[40px] mt-[30px]">
+          <h1 className="font-bold text-[25px]">Get API Key</h1>
+          <p className="mt-[10px]">Fill This form</p>
+          <div className="mt-[10px]">
+            <label htmlFor="FirstName">
+              First Name<span className="text-[red]">*</span>
+            </label>{" "}
+            <br />
+            <input
+              id="FirstName"
+              type="text"
+              className=" focus:outline-none border-b-[1px] w-full pt-[10px] pb-[10px]"
+            />
+          </div>
+          <div>
+            <label htmlFor="LastName">
+              Last Name<span className="text-[red]">*</span>
+            </label>{" "}
+            <br />
+            <input
+              id="LastName"
+              type="text"
+              className="focus:outline-none border-b-[1px] w-full pt-[10px] pb-[10px]"
+            />
+          </div>
+          <div>
+            <label htmlFor="LastName">
+              Email<span className="text-[red]">*</span>
+            </label>{" "}
+            <br />
+            <input
+              id="LastName"
+              type="text"
+              className="focus:outline-none border-b-[1px] w-full pt-[10px] pb-[10px]"
+            />
+          </div>
+          <div>
+            <label htmlFor="Country">
+              Country/Region<span className="text-[red]">*</span>
+            </label>{" "}
+            <br />
+            <input
+              id="Country"
+              type="text"
+              className="focus:outline-none border-b-[1px] w-full pt-[10px] pb-[10px]"
+            />
+          </div>
+          <div>
+            <label htmlFor="websiteURl">Website URL</label> <br />
+            <input
+              id="websiteURl"
+              type="text"
+              className="focus:outline-none border-b-[1px] w-full pt-[10px] pb-[10px]"
+            />
+          </div>
+          <button className="bg-[#4bb4fa] text-[12px] text-white font-bold p-[5px] rounded-md mt-[10px]">
+            Submit
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <h1 className="font-bold text-[24px] text-center text-[#11223d]">
+          Featured Api News
+        </h1>
+        <div className="flex gap-[60px] justify-center mt-[20px]">
+          <div className="h-[350px] w-[300px] shadow-md p-[15px]">
+            <img
+              className="w-[250px]"
+              src="https://assets-global.website-files.com/605236bb767e9a5bb229c63c/6111643b72c915652457f830_post-economist.png"
+              alt=""
+            />
+            <h1>Zombie Research</h1>
+            <p>June 26</p>
+            <p>Dubios papers taint specialist</p>
+            <p>The Economist</p>
+          </div>
+
+          <div className="h-[350px] w-[300px] shadow-md p-[15px] ">
+            <img
+              className="w-[250px]"
+              src="https://assets-global.website-files.com/605236bb767e9a5bb229c63c/6111643b72c915652457f830_post-economist.png"
+              alt=""
+            />
+            <h1>Zombie Research</h1>
+            <p>June 26</p>
+            <p>Dubios papers taint specialist</p>
+            <p>The Economist</p>
+          </div>
+
+          <div className="h-[350px] w-[300px] shadow-md p-[15px]">
+            <img
+              className="w-[250px]"
+              src="https://assets-global.website-files.com/605236bb767e9a5bb229c63c/6111643b72c915652457f830_post-economist.png"
+              alt=""
+            />
+            <h1>Zombie Research</h1>
+            <p>June 26</p>
+            <p>Dubios papers taint specialist</p>
+            <p>The Economist</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-[50px]">
+        <h1 className="font-bold text-[42px] text-center leading-[44px] w-[680px] m-auto text-[#1857b6]">
+          Join the Semantic Scholar API Community Slack Channel
+        </h1>
+        <button className="bg-[#f4de90] mt-[10px] flex justify-center items-center pl-[24px] pr-[24px] rounded-[24px] text-[#11223d] h-[40px] font-[300] m-auto">
+          Get Started
+        </button>
+      </div>
+      <Footer />
     </div>
   );
 };
-
 export default Testimonials;

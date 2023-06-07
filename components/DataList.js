@@ -34,7 +34,6 @@ const DataList = (props) => {
           </p>
         </div>
       </div>
-
       <div>
         {loading ? (
           <Loading />

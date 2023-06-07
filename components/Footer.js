@@ -40,14 +40,28 @@ const Footer = () => {
           <div className="flex text-[#5492ef] gap-[30px]">
             <div className="w-[100px]">
               <h1 className="text-[white]">About</h1>
-              <p className="text-[12px] mt-[10px]">About Us</p>
-              <p className="text-[12px]">Publishers</p>
-              <p className="text-[12px]">Blog</p>
-              <p className="text-[12px]">AI2 Careers</p>
+              <Link href="/about">
+                <p className="text-[12px] mt-[10px] hover:underline">
+                  About Us
+                </p>
+              </Link>
+              <Link href="/publishers">
+                <p className="text-[12px] hover:underline">Publishers</p>
+              </Link>
+              <Link href="/blog">
+                <p className="text-[12px] hover:underline">Blog</p>
+              </Link>
+              <Link href="/careers">
+                <p className="text-[12px] hover:underline">AI2 Careers</p>
+              </Link>
             </div>
             <div className="w-[100px]">
               <h1 className="text-[white]">Product</h1>
-              <p className="text-[12px] mt-[10px]">Product Overview</p>
+              <Link href="/productoverview">
+                <p className="text-[12px] mt-[10px] hover:underline">
+                  Product Overview
+                </p>
+              </Link>
               <p className="text-[12px]">Beta Program</p>
               <p className="text-[12px]">S2AG API</p>
               <p className="text-[12px]">Semantic Reader</p>
