@@ -62,23 +62,49 @@ const Footer = () => {
                   Product Overview
                 </p>
               </Link>
-              <p className="text-[12px]">Beta Program</p>
-              <p className="text-[12px]">S2AG API</p>
-              <p className="text-[12px]">Semantic Reader</p>
+              <Link href="/betaprogram">
+                <p className="text-[12px] hover:underline">Beta Program</p>
+              </Link>
+              <Link href="/s2agapi">
+                <p className="text-[12px] hover:underline">S2AG API</p>
+              </Link>
+              <Link href="/semanticreader">
+                <p className="text-[12px] hover:underline">Semantic Reader</p>
+              </Link>
             </div>
             <div className="w-[100px]">
               <h1 className="text-[white]">Research</h1>
-              <p className="text-[12px] mt-[10px]">Publications</p>
-              <p className="text-[12px]">Team</p>
-              <p className="text-[12px]">Research Careers</p>
-              <p className="text-[12px]">Resources</p>
+              <Link href="/publications">
+                <p className="text-[12px] mt-[10px] hover:underline">
+                  Publications
+                </p>
+              </Link>
+              <Link href="/team">
+                <p className="text-[12px] hover:underline">Team</p>
+              </Link>
+              <Link href="/researchcareers">
+                <p className="text-[12px] hover:underline cursor-pointer">
+                  Research Careers
+                </p>
+              </Link>
+              <Link href="/resources">
+                <p className="text-[12px] hover:underline">Resources</p>
+              </Link>
             </div>
-            <div className="w-[100px] cursor-pointer">
+            <div className="w-[100px]">
               <h1 className="text-[white]">Help</h1>
-              <p className="text-[12px] mt-[10px]">FAQ</p>
-              <p className="text-[12px]">Librarians</p>
-              <p className="text-[12px]">Tutorials</p>
-              <p className="text-[12px]">Contact</p>
+              <Link href="/faq">
+                <p className="text-[12px] mt-[10px] hover:underline">FAQ</p>
+              </Link>
+              <Link href="/librarians">
+                <p className="text-[12px] hover:underline">Librarians</p>
+              </Link>
+              <Link href="/tutorials">
+                <p className="text-[12px] hover:underline">Tutorials</p>
+              </Link>
+              <Link href="/contact">
+                <p className="text-[12px] hover:underline">Contact</p>
+              </Link>
             </div>
           </div>
         </div>

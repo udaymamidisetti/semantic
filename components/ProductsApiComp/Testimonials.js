@@ -196,7 +196,7 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <div className="bg-[90%] bg-cover h-[100vh] bg-[#11223d] bg-[url('https://assets-global.website-files.com/605236bb76…9a5bb229c63c/605bb9bfce18ce8453a1a5cd_rays-bg.svg')]">
+      <div className="pt-[50px] bg-[90%] bg-cover h-[100vh] bg-[#11223d] bg-[url('https://assets-global.website-files.com/605236bb76…9a5bb229c63c/605bb9bfce18ce8453a1a5cd_rays-bg.svg')]">
         <div className="bg-white w-[1000px] m-auto p-[40px] mt-[30px]">
           <h1 className="font-bold text-[25px]">Get API Key</h1>
           <p className="mt-[10px]">Fill This form</p>
